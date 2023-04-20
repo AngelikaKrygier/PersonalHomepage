@@ -8,6 +8,7 @@ const common = {
         bold: 700,
         hardBold: 900,
     },
+    basicBorderRadious: "4px",
 };
 
 const colorNames = {
@@ -49,7 +50,7 @@ export const light = {
         footer: {
             primary: colorNames.mineShaft,
             hover: colorNames.scienceBlue,
-        }
+        },
     },
 }
 

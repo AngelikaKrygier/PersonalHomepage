@@ -5,7 +5,7 @@ export const StyledTile = styled.div`
     min-height: 322px;
     border: 6px solid rgba(209, 213, 218, 0.3);
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
-    border-radius: 4px;
+    border-radius: ${({theme})=>theme.basicBorderRadious};
     padding: 56px;
         &:hover {
             border: 6px solid rgba(3, 102, 214, 0.2);
@@ -21,12 +21,10 @@ export const StyledTile = styled.div`
 export const Header = styled.h3`
     color: ${({ theme }) => theme.colors.primary};
     font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.05em;
+    line-height: 120%;
     margin:0px;
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 16px;
-            line-height: 19px;
         };
 `;
 
@@ -36,7 +34,6 @@ export const Description = styled.p`
     font-weight: ${({ theme }) => theme.fontWeight.regular};
     font-size: 18px;
     line-height: 140%;
-    letter-spacing: 0.05em;
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             margin:16px 0px 16px 0px;
             font-size: 14px;
@@ -48,12 +45,10 @@ export const Span = styled.span`
     font-weight: ${({ theme }) => theme.fontWeight.regular};
     font-size: 18px;
     line-height: 140%;
-    letter-spacing: 0.05em;
     display: flex;
     margin: 8px 0px 0px;
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 14px;
-            line-height: 17px;
         };
 `;
 
@@ -61,7 +56,7 @@ export const Link = styled.span`
     color: ${({ theme }) => theme.colors.primary};
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 14px;
-            line-height: 17px;
+            line-height: 120%;
         };
 `;
 

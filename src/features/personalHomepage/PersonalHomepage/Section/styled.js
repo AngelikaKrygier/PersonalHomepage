@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
     background-color: ${({theme})=>theme.colors.section.background};
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
-    border-radius: 4px;
+    border-radius: ${({theme})=>theme.basicBorderRadious};
     padding: 32px;
     margin: 0px 0px 72px;
     width: 100%;
@@ -16,15 +16,13 @@ export const Wrapper = styled.div`
 export const Header = styled.h1`
     font-weight: ${({ theme }) => theme.fontWeight.hardBold};
     font-size: 30px;
-    line-height: 36px;
-    letter-spacing: 0.05em;
+    line-height: 120%;
     padding-bottom: 15px;
     margin: 0px;
     border-bottom: 1px solid ${({theme})=>theme.colors.section.headerUnderline};
     color: ${({theme})=>theme.colors.textPrimary};
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 18px;
-            line-height: 22px;
             padding-bottom: 12px;
         }
 `;
@@ -47,7 +45,6 @@ export const ListItem = styled.li`
     color: ${({theme})=>theme.colors.section.text};
     font-size: 18px;
     line-height: 140%;
-    letter-spacing: 0.05em;
     list-style: none;
     display: flex;
     align-items: center;
@@ -67,6 +64,6 @@ export const ListItem = styled.li`
     };
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         font-size: 14px;
-        line-height: 17px;
+        line-height: 120%;
     }
 `;
