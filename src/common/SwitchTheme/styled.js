@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { ReactComponent as SunIcon } from "./sun.svg";
 
 export const Wrapper = styled.div`
     align-self: flex-end;
@@ -8,13 +9,48 @@ export const Wrapper = styled.div`
 export const Button = styled.button`
   display: flex;
   align-items: center;
-  color: ${({theme})=>theme.colors.switchTheme.text};
   background: transparent;
+  color: inherit;
   font-size: 12px;
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   text-transform: uppercase;
-  line-height: 1.3;
+  line-height: 130%;
   border: none;
   padding: 0px;
+  outline-offset: 8px;
   cursor: pointer;
+`;
+
+export const Text = styled.span`
+margin-right: 12px;
+font-size:12px;
+text-transform: uppercase;
+font-weight: ${({ theme }) => theme.fontWeight.bold};
+
+@media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+  display: none;
+}
+`;
+
+export const Box = styled.span`
+border-radius:30%;
+display: flex;
+border:1px solid;
+padding: 3px;
+width: 48px;
+background: ${({ theme }) => theme.colors.switchTheme.background};
+`;
+
+export const IconWrapper = styled.span`
+border-radius: 50%;
+display: flex;
+background: currentColor;
+padding: 3px;
+transition: transform 0.3s;
+  ${({ moveToRight }) => moveToRight && css`
+  transform: translateX(20px)`}
+`;
+
+export const Icon = styled(SunIcon)`
+  color: ${({ theme }) => theme.colors.switchTheme.icon};
 `;
