@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-    margin: 115px 0px 63px;
+    margin: 0px 0px 63px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 66px;
@@ -17,7 +17,6 @@ export const Wrapper = styled.div`
 export const Image = styled.img`
     max-width: 398px;
     border-radius: 100%;
-    border: 1px solid;
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             max-width: 132px;
         };
@@ -25,20 +24,22 @@ export const Image = styled.img`
 
 export const Div = styled.div`
     max-width: 633px;
+    display: grid;
 `;
 
 export const Caption = styled.p`
-    color: ${({ theme }) => theme.color.slateGrey};
+    color: ${({ theme }) => theme.colors.content.text};
     margin: 0px;
-    font-weight: 700;
+    font-weight: ${({ theme }) => theme.fontWeight.bold};
     font-size: 12px;
     line-height: 130%;
+    text-transform: uppercase;
 `;
 
 export const StyledHeader = styled.h1`
-    color: ${({ theme }) => theme.color.mainShaft};
+    color: ${({ theme }) => theme.colors.textPrimary};
     margin: 12px 0 0;
-    font-weight: 900;
+    font-weight: ${({ theme }) => theme.fontWeight.hardBold};
     font-size: 38px;
     line-height: 46px;
     letter-spacing: 0.05em;
@@ -50,9 +51,9 @@ export const StyledHeader = styled.h1`
 `;
 
 export const Paragraph = styled.p`
-    color: ${({ theme }) => theme.color.slateGrey};
+    color: ${({ theme }) => theme.colors.content.text};
     margin: 35px 0 32px;
-    font-weight: 400;
+    font-weight: ${({ theme }) => theme.fontWeight.regular};
     font-size: 20px;
     line-height: 140%;
     letter-spacing: 0.05em;
@@ -63,29 +64,30 @@ export const Paragraph = styled.p`
 `;
 
 export const Button = styled.button`
-    color: ${({ theme }) => theme.color.white};
-    background-color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.colors.buttonLink.text};
+    background-color: ${({ theme }) => theme.colors.primary};
     text-align: center;
     border: none;
     padding: 12px;
     width: 154px;
     height: 49px;
-    border: 1px solid rgba(209, 213, 218, 0.3);
+    border: 1px solid ${({ theme }) => theme.colors.buttonLink.border};
     border-radius: 4px;
-    font-weight: 500;
+    font-weight: ${({ theme }) => theme.fontWeight.medium};
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.05em;
+    text-transform: uppercase;
     cursor: pointer;
 
         &:hover {
-            border: 1px solid rgba(209, 213, 218, 0.3);
-            box-shadow: 2px -2px 0px #8CC2FF, -2px 2px 0px #8CC2FF, 2px 2px 0px #8CC2FF, -2px -2px 0px #8CC2FF;
+            border: 1px solid ${({ theme }) => theme.colors.buttonLink.border};
+            box-shadow: 2px -2px 0px #8CC2FF;
             border-radius: 4px;
         }
 
         &:active {
-            border: 1px solid rgba(209, 213, 218, 0.3);
+            border: 1px solid ${({ theme }) => theme.colors.buttonLink.border};
             box-shadow: inset 0px 2px 0px rgba(20, 70, 32, 0.2);
             border-radius: 4px;
         }

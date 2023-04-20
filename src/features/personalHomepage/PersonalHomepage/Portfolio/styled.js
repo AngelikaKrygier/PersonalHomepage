@@ -8,9 +8,9 @@ export const Wrapper = styled.div`
 `;
 
 export const Header = styled.h2`
-    color:${({ theme }) => theme.color.mainShaft};
+    color: ${({ theme }) => theme.colors.textPrimary};
     margin:12px 0px 0px;
-    font-weight: 900;
+    font-weight: ${({ theme }) => theme.fontWeight.hardBold};
     font-size: 30px;
     line-height: 36px;
     letter-spacing: 0.05em;
@@ -21,9 +21,9 @@ export const Header = styled.h2`
 `;
 
 export const Paragraph = styled.p`
-    color:${({ theme }) => theme.color.mainShaft};
+    color:${({ theme }) => theme.colors.textPrimary};
     margin: 8px 0px 24px;
-    font-weight: 400;
+    font-weight: ${({ theme }) => theme.fontWeight.regular};
     font-size: 20px;
     line-height: 140%;
     letter-spacing: 0.05em;
@@ -47,7 +47,7 @@ export const Div = styled.div`
 export const StyledGhPagesIcon = styled(GhIcon)`
     width: 60px;
     height: 60px;
-    fill: ${({ theme }) => theme.color.scienceBlue};
+    fill: ${({ theme }) => theme.colors.primary};
 `;
 
 

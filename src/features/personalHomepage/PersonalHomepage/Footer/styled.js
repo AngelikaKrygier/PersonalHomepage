@@ -12,35 +12,35 @@ export const Div = styled.div`
 `;
 
 export const Caption = styled.p`
-    color: ${({ theme }) => theme.color.slateGrey};
+    color: ${({theme})=>theme.colors.content.text};
     margin: 0px;
-    font-weight: 700;
+    font-weight: ${({theme})=> theme.fontWeight.bold};
     font-size: 12px;
     line-height: 130%;
 `;
 
 export const Header = styled.h2`
-    color: ${({ theme }) => theme.color.mainShaft};
+    color: ${({theme})=>theme.colors.footer.primary};
     margin: 24px 0px;
     cursor: pointer;
-    font-weight: 900;
+    font-weight: ${({theme})=>theme.fontWeight.hardBold};
     font-size: 32px;
     line-height: 120%;
     letter-spacing: 0.05em;
         &:hover{
-                color: ${({ theme }) => theme.color.scienceBlue}
+                color: ${({theme})=>theme.colors.footer.hover}
         };
 
-        @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        @media (max-width: 768px) {
             font-size: 18px;
             margin: 12px 0px;
         };
 `;
 
 export const Paragraph = styled.p`
-    color: ${({ theme }) => theme.color.mainShaft};
+    color: ${({theme})=>theme.colors.footer.primary};
     margin: 0px 0px 56px;
-    font-weight: 400;
+    font-weight: ${({theme})=> theme.fontWeight.regular};
     font-size: 18px;
     line-height: 140%;
     letter-spacing: 0.05em;

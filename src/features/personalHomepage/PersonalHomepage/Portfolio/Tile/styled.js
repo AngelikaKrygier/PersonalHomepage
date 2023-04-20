@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
 export const StyledTile = styled.div`
-    background-color: ${({ theme }) => theme.color.white};
+    background-color: ${({ theme }) => theme.colors.tile.background};
     min-height: 322px;
     border: 6px solid rgba(209, 213, 218, 0.3);
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
     border-radius: 4px;
     padding: 56px;
+        &:hover {
+            border: 6px solid rgba(3, 102, 214, 0.2);
+            box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
+        }
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             min-height: 230px;
             padding: 24px;
@@ -15,7 +19,7 @@ export const StyledTile = styled.div`
 `;
 
 export const Header = styled.h3`
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.colors.primary};
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0.05em;
@@ -27,9 +31,9 @@ export const Header = styled.h3`
 `;
 
 export const Description = styled.p`
-    color: ${({ theme }) => theme.color.slateGrey};
+    color: ${({ theme }) => theme.colors.textPrimary};
     margin:24px 0px 16px 0px;
-    font-weight: 400;
+    font-weight: ${({ theme }) => theme.fontWeight.regular};
     font-size: 18px;
     line-height: 140%;
     letter-spacing: 0.05em;
@@ -40,8 +44,8 @@ export const Description = styled.p`
 `;
 
 export const Span = styled.span`
-    color: ${({ theme }) => theme.color.slateGrey};
-    font-weight: 400;
+    color: ${({ theme }) => theme.colors.textPrimary};
+    font-weight: ${({ theme }) => theme.fontWeight.regular};
     font-size: 18px;
     line-height: 140%;
     letter-spacing: 0.05em;
@@ -54,7 +58,7 @@ export const Span = styled.span`
 `;
 
 export const Link = styled.span`
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.colors.primary};
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 14px;
             line-height: 17px;

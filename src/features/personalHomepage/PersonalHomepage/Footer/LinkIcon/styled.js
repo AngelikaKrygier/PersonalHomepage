@@ -12,9 +12,9 @@ const Icon = css`
     width: 48px;
     height: 48px;
     cursor: pointer;
-    fill: ${({ theme }) => theme.color.mainShaft};
+    fill: ${({ theme }) => theme.colors.footer.primary};
         &:hover{
-            fill: ${({ theme }) => theme.color.scienceBlue}
+            fill: ${({ theme }) => theme.colors.footer.hover};
         };
 `;
 

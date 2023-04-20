@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-    background-color: ${({ theme }) => theme.color.white};
+    background-color: ${({theme})=>theme.colors.section.background};
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
     border-radius: 4px;
     padding: 32px;
@@ -14,14 +14,14 @@ export const Wrapper = styled.div`
 `;
 
 export const Header = styled.h1`
-    font-weight: 900;
+    font-weight: ${({ theme }) => theme.fontWeight.hardBold};
     font-size: 30px;
     line-height: 36px;
     letter-spacing: 0.05em;
     padding-bottom: 15px;
     margin: 0px;
-    border-bottom: 1px solid ${({ theme }) => theme.color.iron};
-    color: ${({ theme }) => theme.color.mainShaft};
+    border-bottom: 1px solid ${({theme})=>theme.colors.section.headerUnderline};
+    color: ${({theme})=>theme.colors.textPrimary};
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 18px;
             line-height: 22px;
@@ -44,7 +44,7 @@ export const Body = styled.ul`
 `;
 
 export const ListItem = styled.li`
-    color: ${({ theme }) => theme.color.slateGrey};
+    color: ${({theme})=>theme.colors.section.text};
     font-size: 18px;
     line-height: 140%;
     letter-spacing: 0.05em;
@@ -54,7 +54,7 @@ export const ListItem = styled.li`
     margin: 0px;
     &::before{
             content: " ";
-            background-color: ${({ theme }) => theme.color.scienceBlue};
+            background-color: ${({theme})=>theme.colors.primary};
             display: block;
             height: 9px;
             width: 9px;
