@@ -1,3 +1,4 @@
+import { nanoid } from "@reduxjs/toolkit";
 import { Wrapper, Header, Body, ListItem } from "./styled";
 
 export const Section = ({ tittle, skills }) => (
@@ -5,7 +6,9 @@ export const Section = ({ tittle, skills }) => (
         <Header>{tittle}</Header>
         <Body>
             {skills.map(skill => (
-                <ListItem>{skill}</ListItem>
+                <ListItem
+                key={nanoid()}
+                >{skill}</ListItem>
             ))}
         </Body>
     </Wrapper>
