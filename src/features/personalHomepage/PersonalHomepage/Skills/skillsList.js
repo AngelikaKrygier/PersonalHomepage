@@ -21,4 +21,4 @@ export const skillsList = [
     "JavaScript: ES6+",
     "Git",
     "CSS Flexbox",
-]
+];
