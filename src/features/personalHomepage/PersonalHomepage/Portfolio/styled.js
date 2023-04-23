@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    width:100%;
 `;
 
 export const Header = styled.h2`
@@ -20,24 +21,13 @@ export const Header = styled.h2`
 
 export const Paragraph = styled.p`
     color:${({ theme }) => theme.colors.textPrimary};
-    margin: 8px 0px 24px;
+    margin: 8px 0px 0px;
     font-weight: ${({ theme }) => theme.fontWeight.regular};
     font-size: 20px;
     line-height: 140%;
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 17px;
             margin: 16px 0px 24px;
-        };
-`;
-
-export const Div = styled.div`
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-    grid-gap:32px;
-    margin: 0px;
-        @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-            grid-template-columns: 1fr;
         };
 `;
 

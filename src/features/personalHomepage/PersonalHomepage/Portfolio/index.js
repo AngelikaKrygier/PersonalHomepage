@@ -1,22 +1,28 @@
-import { Wrapper, Header, Paragraph, Div } from "./styled";
-import { Tile } from "./Tile";
+import { Wrapper, Header, Paragraph } from "./styled";
 import { StyledGhPagesIcon } from "./styled";
-import { useSelector } from "react-redux";
-import { selectPortfolio, selectPortfolioLoading } from "../portfolioSlice";
+import { Project } from "./Project";
+import { useEffect } from "react";
+import { fetchPortfolio, selectPortfolio, selectPortfolioState } from "../../portfolioSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 export const Portfolio = () => {
-    const loading = useSelector(selectPortfolioLoading)
-    const portfolio = useSelector(selectPortfolio)
+    const dispatch = useDispatch();
+    const portfolioState = useSelector(selectPortfolioState);
+    const portfolio = useSelector(selectPortfolio);
+
+    useEffect(() => {
+        dispatch(fetchPortfolio())
+    }, [])
 
     return (
         <Wrapper>
             <StyledGhPagesIcon />
             <Header>Portfolio</Header>
             <Paragraph>My recent projects</Paragraph>
-            <Div>
-                {loading ? "Please wait, projects are being loaded..." : portfolio}
-            </Div>
+            <Project
+                portfolio={portfolio}
+                portfolioState={portfolioState}
+            />
         </Wrapper>
-
     );
 };
