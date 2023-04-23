@@ -4,6 +4,9 @@ import { ReactComponent as SunIcon } from "./sun.svg";
 export const Wrapper = styled.div`
   align-self: flex-end;
   margin: 115px 0px 0px;
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+      margin: 32px 0px 0px;
+    };
 `;
 
 export const Button = styled.button`
@@ -26,32 +29,31 @@ export const Text = styled.span`
   font-size: 12px;
   text-transform: uppercase;
   font-weight: ${({ theme }) => theme.fontWeight.bold};
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    display: none;
-  };
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+      display: none;
+    };
 `;
 
 export const Box = styled.span`
   border-radius:32%;
   display: flex;
-  border:1px solid ${({theme})=>theme.colors.switchTheme.border};
+  border:1px solid ${({ theme }) => theme.colors.switchTheme.border};
   padding: 3px;
   width: 48px;
-  background: ${({theme})=>theme.colors.switchTheme.background};
+  background: ${({ theme }) => theme.colors.switchTheme.background};
 `;
 
 export const IconWrapper = styled.span`
   border-radius: 100%;
   display: flex;
-  background: ${({theme})=>theme.colors.switchTheme.backgroundIcon};
+  background: ${({ theme }) => theme.colors.switchTheme.backgroundIcon};
   padding: 3px;
   transition: transform 0.3s;
     ${({ moveToRight }) => moveToRight && css`
     transform: translateX(20px)`}
 `;
 
-  export const Icon = styled(SunIcon)`
-    stroke: ${({theme})=>theme.colors.switchTheme.icon};
-    fill: ${({theme})=>theme.colors.switchTheme.icon};
+export const Icon = styled(SunIcon)`
+    stroke: ${({ theme }) => theme.colors.switchTheme.icon};
+    fill: ${({ theme }) => theme.colors.switchTheme.icon};
 `;

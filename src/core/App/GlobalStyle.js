@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 120%;
         color: ${({ theme }) => theme.colors.content.text};
         background-color: ${({ theme }) => theme.colors.content.background};
-        transition: background 0.3s;
+        transition: background 0.5s;
     };
 
     #root {

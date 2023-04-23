@@ -27,7 +27,7 @@ export const Paragraph = styled.p`
     line-height: 140%;
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 17px;
-            margin: 16px 0px 24px;
+            margin: 16px 0px 0px;
         };
 `;
 

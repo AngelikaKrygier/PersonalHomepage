@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             margin: 0px 0px 50px;
             padding: 16px;
-        }
+        };
 `;
 
 export const Header = styled.h1`
@@ -24,7 +24,7 @@ export const Header = styled.h1`
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 18px;
             padding-bottom: 12px;
-        }
+        };
 `;
 
 export const Body = styled.ul`
@@ -49,21 +49,21 @@ export const ListItem = styled.li`
     display: flex;
     align-items: center;
     margin: 0px;
-    &::before{
-            content: " ";
-            background-color: ${({theme})=>theme.colors.primary};
-            display: block;
-            height: 9px;
-            width: 9px;
-            margin-right: 16px;
-            border-radius: 50%;
+        &::before{
+                content: " ";
+                background-color: ${({theme})=>theme.colors.primary};
+                display: block;
+                height: 9px;
+                width: 9px;
+                margin-right: 16px;
+                border-radius: 50%;
                 @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-                    height: 6px;
-                    width: 6px;
+                        height: 6px;
+                        width: 6px;
                 };
-    };
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        font-size: 14px;
-        line-height: 120%;
-    }
+        };
+        @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+            font-size: 14px;
+            line-height: 120%;
+        };
 `;

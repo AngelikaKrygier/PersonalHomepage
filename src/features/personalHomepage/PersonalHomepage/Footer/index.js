@@ -9,7 +9,7 @@ export const Footer = () => (
         <Paragraph>
             I'm always open to new projects. If you have a website, dashboard or&nbsp;mobile 
             app in mind and need some help to make your ideas come to&nbsp;life,
-            feel free to conatct me
+            feel free to conatct me.
         </Paragraph>
         <SocialMedia socialMediaList={socialMediaList}></SocialMedia>
     </Div>

@@ -1,31 +1,30 @@
 import styled from "styled-components"
 
 export const List = styled.ul`
-max-width: 1215px;
-margin: 24px 0px 120px;
-width: 100%;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-list-style:none;
-padding: 0px;
-grid-gap:32px;
-
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        grid-template-columns: 1fr;
-        grid-gap:24px;
-    };
+    max-width: 1215px;
+    margin: 24px 0px 120px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style:none;
+    padding: 0px;
+    grid-gap:32px;
+        @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+            grid-template-columns: 1fr;
+            grid-gap:24px;
+            margin: 24px 0px 0px;
+        };
 `;
 
 export const StyledTile = styled.li`
     background-color: ${({ theme }) => theme.colors.tile.background};
     display: grid;
     grid-template-columns: auto;
-    min-height: 322px;
     border: 6px solid ${({ theme }) => theme.colors.tile.border};
     box-shadow: ${({ theme }) => theme.basicBoxShadow};
     border-radius: ${({ theme }) => theme.basicBorderRadious};
     padding: 56px;
-    transition: border-color 0.5s ease;
+    transition: 0.5s;
         &:hover {
             border: 6px solid ${({ theme }) => theme.colors.tile.borderHover};
         }
@@ -51,10 +50,11 @@ export const Description = styled.p`
     font-weight: ${({ theme }) => theme.fontWeight.regular};
     font-size: 18px;
     line-height: 140%;
+    text-align: justify;
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             margin:16px 0px 16px 0px;
             font-size: 14px;
-    };
+        };
 `;
 
 export const Span = styled.span`
@@ -77,9 +77,8 @@ export const Link = styled.a`
     text-decoration:none;
     cursor: pointer;
         &:hover {
-            border-bottom: 1px solid;
+            text-decoration: underline;
         };
-
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 14px;
             line-height: 120%;

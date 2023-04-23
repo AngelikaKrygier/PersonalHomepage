@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
     align-items: center;
     width:100%;
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-            margin: 32px 0px 48px;
+            margin: 0px 0px 48px;
             grid-template-columns: 1fr;
             grid-gap: 13px;
         };

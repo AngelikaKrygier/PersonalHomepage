@@ -3,7 +3,7 @@ import { PortfolioError } from "./PortfolioError";
 import { PortfolioSuccess } from "./PortfolioSuccess";
 
 export const Project = ({portfolioState, portfolio}) => {
-    return <PortfolioError />;
+    
     switch (portfolioState) {
         case "loading": 
         return <PortfolioLoading />;

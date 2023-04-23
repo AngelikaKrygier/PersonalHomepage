@@ -97,6 +97,10 @@ export const dark = {
             text: colorNames.white,
             headerUnderline: colorNames.iron,
         },
+        spinner: {
+            animation: colorNames.scienceBlue,
+            border: colorNames.iron,
+        },
         tile: {
             background: colorNames.semiDarkMineShaft,
             border: colorNames.semiLightIron,
