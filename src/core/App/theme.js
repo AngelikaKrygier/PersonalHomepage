@@ -9,18 +9,24 @@ const common = {
         hardBold: 900,
     },
     basicBorderRadious: "4px",
+    basicBoxShadow: "0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03)",
 };
 
 const colorNames = {
     white: "#FFFFFF",
     whiteLilac: "#FBFBFE",
+    semiLightIron: "rgba(209, 213, 218, 0.3)",
     iron: "#D1D5DA",
     semiDarkMineShaft: "rgba(54, 54, 54, 0.72)",
     mineShaft: "#252525",
+    anakiwa: "#8CC2FF",
     slateGrey: "#6E7E91",
+    shipCove: "#6D93BE",
     dodgerBlue: "#2188FF",
-    semiLightScienceBlue: "(209, 213, 218, 0.3)",
+    semiLightScienceBlue: "rgba(3, 102, 214, 0.2)",
     scienceBlue: "#0366D6",
+    semiCerulean: "rgb(3, 102, 214, 0.5)",
+    semiLightParsley: "rgba(20, 70, 32, 0.2)",
 };
 
 export const light = {
@@ -33,26 +39,37 @@ export const light = {
             text: colorNames.slateGrey,
         },
         switchTheme: {
-            text: colorNames.slateGrey
+            border: colorNames.slateGrey,
+            background: colorNames.iron,
+            backgroundIcon: colorNames.slateGrey,
+            icon: colorNames.white,
         },
         buttonLink: {
             text: colorNames.white,
-            border: colorNames.semiLightScienceBlue,
+            border: colorNames.semiLightIron,
+            hover: colorNames.anakiwa,
+            active: colorNames.semiLightParsley,
         },
         section: {
             background: colorNames.white,
             text: colorNames.slateGrey,
             headerUnderline: colorNames.iron,
         },
+        spinner: {
+            animation: colorNames.scienceBlue,
+            border: colorNames.iron,
+        },
         tile: {
             background: colorNames.white,
+            border: colorNames.semiLightIron,
+            borderHover: colorNames.semiLightScienceBlue,
         },
         footer: {
             primary: colorNames.mineShaft,
             hover: colorNames.scienceBlue,
         },
     },
-}
+};
 
 export const dark = {
     ...common,
@@ -64,10 +81,16 @@ export const dark = {
             text: colorNames.white,
         },
         switchTheme: {
-            text: colorNames.white
+            border: colorNames.slateGrey,
+            background: colorNames.semiDarkMineShaft,
+            backgroundIcon: colorNames.white,
+            icon: colorNames.mineShaft,
         },
         buttonLink: {
-            text: colorNames.white
+            text: colorNames.white,
+            border: colorNames.semiLightIron,
+            hover: colorNames.shipCove,
+            active: colorNames.semiLightParsley,
         },
         section: {
             background: colorNames.semiDarkMineShaft,
@@ -76,6 +99,8 @@ export const dark = {
         },
         tile: {
             background: colorNames.semiDarkMineShaft,
+            border: colorNames.semiLightIron,
+            borderHover: colorNames.semiCerulean,
         },
         footer: {
             primary: colorNames.white,

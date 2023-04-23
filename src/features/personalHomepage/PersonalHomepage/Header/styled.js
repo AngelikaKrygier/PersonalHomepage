@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as MsgIcon } from "../images/message.svg";
 
 export const Wrapper = styled.div`
     margin: 0px 0px 63px;
@@ -31,7 +32,6 @@ export const Caption = styled.p`
     margin: 0px;
     font-weight: ${({ theme }) => theme.fontWeight.bold};
     font-size: 12px;
-
     text-transform: uppercase;
 `;
 
@@ -58,38 +58,8 @@ export const Paragraph = styled.p`
         };
 `;
 
-export const Button = styled.button`
-    color: ${({ theme }) => theme.colors.buttonLink.text};
-    background-color: ${({ theme }) => theme.colors.primary};
-    text-align: center;
-    border: none;
-    padding: 12px;
-    width: 154px;
-    height: 49px;
-    border: 1px solid ${({ theme }) => theme.colors.buttonLink.border};
-    border-radius: ${({theme})=>theme.basicBorderRadious};
-    font-weight: ${({ theme }) => theme.fontWeight.medium};
-    font-size: 20px;
-    line-height: 120%;
-    text-transform: uppercase;
-    cursor: pointer;
-
-        &:hover {
-            border: 1px solid ${({ theme }) => theme.colors.buttonLink.border};
-            box-shadow: 2px -2px 0px #8CC2FF;
-            border-radius: ${({theme})=>theme.basicBorderRadious};
-        }
-
-        &:active {
-            border: 1px solid ${({ theme }) => theme.colors.buttonLink.border};
-            box-shadow: inset 0px 2px 0px rgba(20, 70, 32, 0.2);
-            border-radius: ${({theme})=>theme.basicBorderRadious};
-        }
-
-        @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-            width: 138px;
-            height: 46px;
-            font-size: 18px;
-        };
+export const MessageIcon = styled(MsgIcon)`
+    width: 19px;
+    height: 17px;
 `;
 

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     background-color: ${({theme})=>theme.colors.section.background};
-    box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
+    box-shadow: ${({ theme }) => theme.basicBoxShadow};
     border-radius: ${({theme})=>theme.basicBorderRadious};
     padding: 32px;
     margin: 0px 0px 72px;

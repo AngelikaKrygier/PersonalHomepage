@@ -4,7 +4,7 @@ export const Div = styled.div`
     align-self: flex-start;
     max-width: 680px;
     width: 100%;
-    margin: 120px 0px 109px;
+    margin: 0px 0px 109px;
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             max-width: 288px;
             margin: 48px 0px 30px;
@@ -16,6 +16,7 @@ export const Caption = styled.p`
     font-weight: ${({ theme }) => theme.fontWeight.bold};
     font-size: 12px;
     line-height: 130%;
+    text-transform: uppercase;
 `;
 
 export const Header = styled.h2`
@@ -28,14 +29,14 @@ export const Header = styled.h2`
             color: ${({ theme }) => theme.colors.footer.hover}
         };
 
-        @media (max-width: 768px) {
+        @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             margin: 12px 0px;
             font-size: 18px;
         };
 `;
 
 export const Paragraph = styled.p`
-    margin: 0px 0px 56px;
+    margin-bottom: 56px;
     color: ${({ theme }) => theme.colors.footer.primary};
     font-weight: ${({ theme }) => theme.fontWeight.regular};
     font-size: 18px;
@@ -43,7 +44,7 @@ export const Paragraph = styled.p`
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 14px;
             line-height: 120%;
-            margin: 0px 0px 40px;
+            margin-bottom: 40px;
         };
 `;
 
