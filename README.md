@@ -1,7 +1,8 @@
 # PersonalHomepage
 This is my Personal Homepage. It contains information about my skills, plans for my own development and a redirect to my repository.
 
-![Uploading personalHomepage.gif…]()
+
+![personalHomepage1](https://user-images.githubusercontent.com/123166327/233936433-5749ff2e-fc56-4720-8ac2-744187fb789e.gif)
 
 
 ## Technologies
