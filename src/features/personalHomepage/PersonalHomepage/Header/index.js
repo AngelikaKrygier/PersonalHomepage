@@ -4,7 +4,7 @@ import photo from "../images/Person.jpg";
 
 export const Header = () => (
     <Wrapper>
-        <Image img src={photo} />
+        <Image img src={photo} alt="Angelika Krygier" />
         <Div>
             <Caption>This is</Caption>
             <StyledHeader>Angelika Krygier</StyledHeader>

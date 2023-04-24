@@ -2,7 +2,7 @@ import { ThemeProvider } from "styled-components";
 import { PersonalHomepage } from "../../features/personalHomepage/PersonalHomepage";
 import { selectDarkTheme } from "../../common/SwitchTheme/themeSlice";
 import { useSelector } from "react-redux";
-import { dark, light } from "../App/theme"
+import { dark, light } from "../App/theme";
 import { GlobalStyle } from "./GlobalStyle";
 
 export const App = () => {

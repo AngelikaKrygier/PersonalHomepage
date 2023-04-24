@@ -7,8 +7,10 @@ export const Section = ({ tittle, skills }) => (
         <Body>
             {skills.map(skill => (
                 <ListItem
-                key={nanoid()}
-                >{skill}</ListItem>
+                    key={nanoid()}
+                >
+                    {skill}
+                </ListItem>
             ))}
         </Body>
     </Wrapper>

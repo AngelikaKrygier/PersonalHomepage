@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 120%;
         color: ${({ theme }) => theme.colors.content.text};
         background-color: ${({ theme }) => theme.colors.content.background};
-        transition: background 0.5s;
+        transition: 0.5s;
     };
 
     #root {
@@ -28,6 +28,7 @@ export const GlobalStyle = createGlobalStyle`
         flex-direction: column;
         align-items: center;
         padding: 0px;
+            
             @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
                 width: 292px;
             };

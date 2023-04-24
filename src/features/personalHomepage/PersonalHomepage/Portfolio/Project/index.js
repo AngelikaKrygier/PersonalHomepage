@@ -2,19 +2,19 @@ import { PortfolioLoading } from "./PortfolioLoading";
 import { PortfolioError } from "./PortfolioError";
 import { PortfolioSuccess } from "./PortfolioSuccess";
 
-export const Project = ({portfolioState, portfolio}) => {
-    
+export const Project = ({ portfolioState, portfolio }) => {
+
     switch (portfolioState) {
-        case "loading": 
-        return <PortfolioLoading />;
+        case "loading":
+            return <PortfolioLoading />;
 
-        case "error": 
-        return <PortfolioError />;
+        case "error":
+            return <PortfolioError />;
 
-        case "success": 
-        return <PortfolioSuccess portfolio={portfolio}/>;
+        case "success":
+            return <PortfolioSuccess portfolio={portfolio} />;
 
-        case "initial": 
-        return null;
+        case "initial":
+            return null;
     };
 };

@@ -5,7 +5,7 @@ export const SocialMedia = ({ socialMediaList }) => (
         {socialMediaList.map(({ name, url, Icon }) => (
             <li key={name}>
                 <a href={url} title={name} target="_blank" rel="noreferrer noopener">
-                    <Icon/>
+                    <Icon />
                 </a>
             </li>
         ))}

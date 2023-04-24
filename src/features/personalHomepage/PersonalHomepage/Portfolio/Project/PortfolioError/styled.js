@@ -7,6 +7,7 @@ export const WrapperError = styled.div`
     flex-direction: column;
     align-items: center;
     color: ${({ theme }) => theme.colors.textPrimary};
+       
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             margin: 50px 0px;
         };
@@ -24,6 +25,7 @@ export const Message = styled.p`
     font-size: 24px;
     line-height: 120%;
     text-align: center;
+        
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 18px;
         };
@@ -34,6 +36,7 @@ export const SubMessage = styled.p`
     font-size: 20px;
     line-height: 140%;
     text-align: center;
+       
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
                 font-size: 16px;
             };

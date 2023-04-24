@@ -12,9 +12,11 @@ export const styledIcon = (Icon) => styled(Icon)`
     height: 48px;
     cursor: pointer;
     fill: ${({ theme }) => theme.colors.footer.primary};
+    transition: 0.5s;
         &:hover{
             fill: ${({ theme }) => theme.colors.footer.hover};
         };
+        
         @media (max-width: ${({ theme }) => theme.breakpoint.small}px) {
             width: 32px;
         };

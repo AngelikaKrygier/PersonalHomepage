@@ -5,6 +5,6 @@ export const PortfolioLoading = () => (
         <Paragraph>
             Please wait, projects are being loaded…
         </Paragraph>
-        <StyledSpinner/>
+        <StyledSpinner />
     </LoadingWrapper>
 );

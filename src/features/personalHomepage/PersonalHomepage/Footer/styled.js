@@ -5,6 +5,7 @@ export const Div = styled.div`
     max-width: 680px;
     width: 100%;
     margin: 0px 0px 109px;
+        
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             max-width: 288px;
             margin: 48px 0px 30px;
@@ -25,10 +26,11 @@ export const Header = styled.h2`
     font-weight: ${({ theme }) => theme.fontWeight.hardBold};
     font-size: 32px;
     cursor: pointer;
+    transition: 0.5s;
         &:hover{
             color: ${({ theme }) => theme.colors.footer.hover}
         };
-
+        
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             margin: 12px 0px;
             font-size: 18px;
@@ -41,6 +43,7 @@ export const Paragraph = styled.p`
     font-weight: ${({ theme }) => theme.fontWeight.regular};
     font-size: 18px;
     line-height: 140%;
+       
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 14px;
             line-height: 120%;

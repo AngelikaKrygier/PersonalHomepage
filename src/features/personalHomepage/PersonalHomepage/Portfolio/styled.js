@@ -14,6 +14,7 @@ export const Header = styled.h2`
     font-weight: ${({ theme }) => theme.fontWeight.hardBold};
     font-size: 30px;
     line-height: 120%;
+        
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 18px;
         };
@@ -25,6 +26,7 @@ export const Paragraph = styled.p`
     font-weight: ${({ theme }) => theme.fontWeight.regular};
     font-size: 20px;
     line-height: 140%;
+        
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 17px;
             margin: 16px 0px 0px;

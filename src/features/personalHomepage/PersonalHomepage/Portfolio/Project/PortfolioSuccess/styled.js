@@ -9,6 +9,7 @@ export const List = styled.ul`
     list-style:none;
     padding: 0px;
     grid-gap:32px;
+        
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             grid-template-columns: 1fr;
             grid-gap:24px;
@@ -28,6 +29,7 @@ export const StyledTile = styled.li`
         &:hover {
             border: 6px solid ${({ theme }) => theme.colors.tile.borderHover};
         }
+        
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             min-height: 230px;
             padding: 24px;
@@ -39,6 +41,7 @@ export const Header = styled.h3`
     font-size: 24px;
     line-height: 120%;
     margin:0px;
+        
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 16px;
         };
@@ -51,6 +54,7 @@ export const Description = styled.p`
     font-size: 18px;
     line-height: 140%;
     text-align: justify;
+        
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             margin:16px 0px 16px 0px;
             font-size: 14px;
@@ -66,6 +70,7 @@ export const Span = styled.span`
     align-self: self-end;
     gap:8px;
     margin: 8px 0px 0px;
+        
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 14px;
         };
@@ -79,6 +84,7 @@ export const Link = styled.a`
         &:hover {
             text-decoration: underline;
         };
+        
         @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
             font-size: 14px;
             line-height: 120%;
