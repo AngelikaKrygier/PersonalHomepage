@@ -1,14 +1,20 @@
 # PersonalHomepage
 This is my Personal Homepage. It contains information about my skills, plans for my own development and a redirect to my repository.
 
+![Uploading personalHomepage.gif…]()
+
+
 ## Technologies
-HTML
-CSS
-JavaScript
-Redux
-Redux-Saga
-React
-Styled Components
+- HTML
+- CSS
+- JavaScript
+- Redux
+- Redux-Saga
+- React
+- Styled Components
+
+## Demo
+!(https://angelikakrygier.github.io/PersonalHomepage/)
 
 ## Available Scripts
 
