@@ -14,7 +14,7 @@ This is my Personal Homepage. It contains information about my skills, plans for
 - Styled Components
 
 ## Demo
-!(https://angelikakrygier.github.io/PersonalHomepage/)
+https://angelikakrygier.github.io/PersonalHomepage/
 
 ## Available Scripts
 
