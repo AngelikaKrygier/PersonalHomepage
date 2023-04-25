@@ -8,8 +8,29 @@ const common = {
         bold: 700,
         hardBold: 900,
     },
+    fontSize: {
+        XS: "12px",
+        S: "14px",
+        sM: "16px",
+        M: "17px",
+        lM: "18px",
+        sXL: "20px",
+        XL: "22px",
+        lXL: "24px",
+        sXXl: "30px",
+        XXL: "32px",
+        lXXL: "38px",
+
+
+    },
+    lineHeight: {
+        basic: "120%",
+        medium: "130%",
+        large: "140%",
+
+    },
     basicBorderRadious: "4px",
-    basicBoxShadow: "0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03)",
+    basicBoxShadow: "0 -2px 50px rgba(9, 10, 51, 0.02), 0p 16px 58px rgba(9, 10, 51, 0.03)",
 };
 
 const colorNames = {

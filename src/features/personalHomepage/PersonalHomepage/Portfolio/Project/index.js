@@ -8,13 +8,10 @@ export const Project = ({ portfolioState, portfolio }) => {
         case "loading":
             return <PortfolioLoading />;
 
-        case "error":
-            return <PortfolioError />;
-
         case "success":
             return <PortfolioSuccess portfolio={portfolio} />;
 
-        case "initial":
-            return null;
+        default:
+            return <PortfolioError />;
     };
 };

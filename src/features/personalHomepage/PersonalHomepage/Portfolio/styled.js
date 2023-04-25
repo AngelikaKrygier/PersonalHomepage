@@ -1,36 +1,36 @@
 import styled from "styled-components";
 import { ReactComponent as GhIcon } from "../images/GhIcon.svg";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.article`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:100%;
+    width: 100%;
 `;
 
 export const Header = styled.h2`
     color: ${({ theme }) => theme.colors.textPrimary};
-    margin:12px 0px 0px;
+    margin: 12px 0 0;
     font-weight: ${({ theme }) => theme.fontWeight.hardBold};
-    font-size: 30px;
-    line-height: 120%;
+    font-size: ${({theme})=>theme.fontSize.sXXL};
+    line-height: ${({theme})=>theme.lineHeight.basic};
         
-        @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-            font-size: 18px;
-        };
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        font-size: ${({theme})=>theme.fontSize.lM};
+    };
 `;
 
 export const Paragraph = styled.p`
-    color:${({ theme }) => theme.colors.textPrimary};
-    margin: 8px 0px 0px;
+    color: ${({ theme }) => theme.colors.textPrimary};
+    margin: 8px 0 0;
     font-weight: ${({ theme }) => theme.fontWeight.regular};
-    font-size: 20px;
-    line-height: 140%;
+    font-size: ${({theme})=>theme.fontSize.sXL};
+    line-height: ${({theme})=>theme.lineHeight.large};
         
-        @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-            font-size: 17px;
-            margin: 16px 0px 0px;
-        };
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        font-size: ${({theme})=>theme.fontSize.M};
+        margin: 16px 0 0;
+    };
 `;
 
 export const StyledGhPagesIcon = styled(GhIcon)`
