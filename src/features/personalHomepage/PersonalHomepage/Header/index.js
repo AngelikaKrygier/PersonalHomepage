@@ -1,11 +1,11 @@
-import { Wrapper, Image, Div, Caption, StyledHeader, Paragraph, MessageIcon } from "./styled";
+import { Wrapper, Image, Contaiener, Caption, StyledHeader, Paragraph, MessageIcon } from "./styled";
 import { Button } from "../Button";
 import photo from "../images/Person.jpg";
 
 export const Header = () => (
     <Wrapper>
         <Image img src={photo} alt="Angelika Krygier" />
-        <Div>
+        <Contaiener>
             <Caption>This is</Caption>
             <StyledHeader>Angelika Krygier</StyledHeader>
             <Paragraph>
@@ -18,6 +18,6 @@ export const Header = () => (
                 icon={<MessageIcon />}
                 content="Hire Me"
             />
-        </Div>
+        </Contaiener>
     </Wrapper>
 );
