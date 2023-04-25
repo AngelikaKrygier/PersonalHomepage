@@ -1,6 +1,7 @@
+const API_URL = `https://api.github.com/users/AngelikaKrygier/repos`;
+
 export const getPortfolio = async () => {
-    const api = `https://api.github.com/users/AngelikaKrygier/repos`;
-    const response = await fetch(api);
+    const response = await fetch(API_URL);
 
     if (!response.ok) {
         throw new Error(response.statusText);
